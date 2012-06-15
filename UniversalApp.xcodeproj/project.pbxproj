@@ -13,6 +13,8 @@
 		E0B50366152AEB760050A8DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B50364152AEB760050A8DF /* InfoPlist.strings */; };
 		E0B50368152AEB760050A8DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B50367152AEB760050A8DF /* main.m */; };
 		E0B5036C152AEB760050A8DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B5036B152AEB760050A8DF /* AppDelegate.m */; };
+		E0B5037A152AEF810050A8DF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B50379152AEF810050A8DF /* RootViewController.m */; };
+		E0B50380152AEFBB0050A8DF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B5037F152AEFBB0050A8DF /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,16 @@
 		E0B5035B152AEB760050A8DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E0B5035D152AEB760050A8DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E0B5035F152AEB760050A8DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E0B50363152AEB760050A8DF /* UniversalApp-Info.plist */ = {isa = PBXFileReference; path = "UniversalApp-Info.plist"; sourceTree = "<group>"; };
+		E0B50363152AEB760050A8DF /* UniversalApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UniversalApp-Info.plist"; sourceTree = "<group>"; };
 		E0B50365152AEB760050A8DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E0B50367152AEB760050A8DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E0B50369152AEB760050A8DF /* UniversalApp-Prefix.pch */ = {isa = PBXFileReference; path = "UniversalApp-Prefix.pch"; sourceTree = "<group>"; };
-		E0B5036A152AEB760050A8DF /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E0B50369152AEB760050A8DF /* UniversalApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UniversalApp-Prefix.pch"; sourceTree = "<group>"; };
+		E0B5036A152AEB760050A8DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E0B5036B152AEB760050A8DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E0B50378152AEF810050A8DF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		E0B50379152AEF810050A8DF /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		E0B5037E152AEFBB0050A8DF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E0B5037F152AEFBB0050A8DF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,10 @@
 				E0B5036A152AEB760050A8DF /* AppDelegate.h */,
 				E0B5036B152AEB760050A8DF /* AppDelegate.m */,
 				E0B50362152AEB760050A8DF /* Supporting Files */,
+				E0B50378152AEF810050A8DF /* RootViewController.h */,
+				E0B50379152AEF810050A8DF /* RootViewController.m */,
+				E0B5037E152AEFBB0050A8DF /* DetailViewController.h */,
+				E0B5037F152AEFBB0050A8DF /* DetailViewController.m */,
 			);
 			path = UniversalApp;
 			sourceTree = "<group>";
@@ -154,6 +164,8 @@
 			files = (
 				E0B50368152AEB760050A8DF /* main.m in Sources */,
 				E0B5036C152AEB760050A8DF /* AppDelegate.m in Sources */,
+				E0B5037A152AEF810050A8DF /* RootViewController.m in Sources */,
+				E0B50380152AEFBB0050A8DF /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

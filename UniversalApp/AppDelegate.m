@@ -7,15 +7,40 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
+#import "DetailViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize splitViewController = _splitViewController;
+@synthesize phoneNavigationController = _phoneNavigationController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) 
+    {
+        self.splitViewController = [[UISplitViewController alloc] init];
+        self.window.rootViewController = self.splitViewController;
+        
+        RootViewController *root = [[RootViewController alloc] initWithStyle:UITableViewStylePlain];
+        UINavigationController *navRoot = [[UINavigationController alloc] initWithRootViewController:root];
+        
+        DetailViewController *detail = [[DetailViewController alloc] init];
+        UINavigationController *navDetail = [[UINavigationController alloc] initWithRootViewController:detail];
+
+        self.splitViewController.delegate = detail;
+        self.splitViewController.viewControllers = [NSArray arrayWithObjects:navRoot, navDetail, nil];
+    }
+    else
+    {
+        RootViewController *root = [[RootViewController alloc] initWithStyle:UITableViewStylePlain];
+        self.phoneNavigationController = [[UINavigationController alloc] initWithRootViewController:root];
+        self.window.rootViewController = self.phoneNavigationController;
+    }
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
